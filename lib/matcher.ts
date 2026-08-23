@@ -28,7 +28,7 @@ export async function matchResumeToJob(
   const ai = getGeminiClient();
 
   const response = await ai.models.generateContent({
-    model: "gemini-3.6-flash",
+    model: "gemini-3.5-flash-lite",
     contents: `
 You are an expert resume screening and job matching system.
 
