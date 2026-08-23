@@ -19,18 +19,12 @@ export default function Home() {
         </div>
 
         <div className="hidden items-center gap-8 text-xs text-gray-400 md:flex">
-          <button
-            onClick={() => {
-              document
-                .getElementById("how-it-works")
-                ?.scrollIntoView({
-                  behavior: "smooth",
-                });
-            }}
+          <a
+            href="#how-it-works"
             className="transition hover:text-white"
           >
             How It Works
-          </button>
+          </a>
 
           <button className="transition hover:text-white">
             For Job Seekers
@@ -73,18 +67,12 @@ export default function Home() {
             Analyze Resumes →
           </button>
 
-          <button
-            onClick={() => {
-              document
-                .getElementById("how-it-works")
-                ?.scrollIntoView({
-                  behavior: "smooth",
-                });
-            }}
+          <a
+            href="#how-it-works"
             className="rounded-md border border-white/10 bg-[#111525] px-7 py-3 text-sm text-gray-300 transition hover:bg-[#171b2d]"
           >
             See How It Works
-          </button>
+          </a>
         </div>
 
         <p className="mt-4 text-[10px] text-gray-600">
