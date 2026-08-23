@@ -19,9 +19,17 @@ export default function Home() {
         </div>
 
         <div className="hidden items-center gap-8 text-xs text-gray-400 md:flex">
-          <button className="transition hover:text-white">
-            How It Works
-          </button>
+          <button
+  onClick={() => {
+    document
+      .getElementById("how-it-works")
+      ?.scrollIntoView({
+        behavior: "smooth",
+      });
+  }}
+>
+  How It Works
+</button>
 
           <button className="transition hover:text-white">
             For Job Seekers
@@ -172,6 +180,49 @@ export default function Home() {
               Compare My Resumes →
             </button>
           </div>
+          <section
+  id="how-it-works"
+  className="mx-auto max-w-6xl px-6 py-24 md:px-10"
+>
+  <div className="text-center">
+    <p className="text-[10px] uppercase tracking-[0.2em] text-[#8e94ff]">
+      How It Works
+    </p>
+
+    <h2 className="mt-3 text-3xl font-bold tracking-tight">
+      From job description to the right resume.
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-gray-500">
+      Paste a job description, upload multiple resumes, and
+      let TalentIQ compare, explain, and rank them for you.
+    </p>
+  </div>
+
+  <div className="mt-12 grid gap-4 md:grid-cols-3">
+    <div className="rounded-xl border border-white/10 bg-[#101421] p-6">
+      <p className="text-sm font-semibold">01 · Add the JD</p>
+      <p className="mt-3 text-xs leading-6 text-gray-500">
+        Paste the job description you're targeting.
+      </p>
+    </div>
+
+    <div className="rounded-xl border border-white/10 bg-[#101421] p-6">
+      <p className="text-sm font-semibold">02 · Upload resumes</p>
+      <p className="mt-3 text-xs leading-6 text-gray-500">
+        Upload multiple resume versions or candidate resumes.
+      </p>
+    </div>
+
+    <div className="rounded-xl border border-white/10 bg-[#101421] p-6">
+      <p className="text-sm font-semibold">03 · Compare & rank</p>
+      <p className="mt-3 text-xs leading-6 text-gray-500">
+        TalentIQ analyzes the fit, highlights strengths and
+        gaps, and ranks the resumes.
+      </p>
+    </div>
+  </div>
+</section>
 
           {/* Recruiters */}
           <div className="rounded-xl border border-white/10 bg-[#101421] p-7 transition hover:border-[#6f76ff]/30">
@@ -257,6 +308,7 @@ function ResumePreview({
             />
           </div>
         </div>
+
 
         <div className="text-right">
           <p className="text-xl font-bold text-[#9da2ff]">{score}</p>
