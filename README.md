@@ -413,3 +413,9 @@ Compare Results
 Rank Resumes
         ↓
 View Strengths, Gaps & Recommendations
+
+
+
+## Demo Video
+
+[Watch the TalentIQ Demo](./demo/TalentIQ-Demo.mp4)
